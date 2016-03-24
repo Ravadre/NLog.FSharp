@@ -30,27 +30,27 @@ type Logger(logger: NLog.Logger ) =
     member __.Trace fmt =
         Printf.kprintf (fun s -> logger.Trace(s)) fmt
     member __.TraceException (e:Exception) fmt =
-        Printf.kprintf (fun s -> logger.Trace(s, e)) fmt
+        Printf.kprintf (fun s -> logger.Trace(e, s)) fmt
     member __.Debug fmt = 
         Printf.kprintf (fun s -> logger.Debug(s)) fmt
     member __.DebugException (e:Exception) fmt =
-        Printf.kprintf (fun s -> logger.Debug(s, e)) fmt
+        Printf.kprintf (fun s -> logger.Debug(e, s)) fmt
     member __.Info fmt = 
         Printf.kprintf (fun s -> logger.Info(s)) fmt
     member __.InfoException (e:Exception) fmt =
-        Printf.kprintf (fun s -> logger.Info(s, e)) fmt
+        Printf.kprintf (fun s -> logger.Info(e, s)) fmt
     member __.Warn fmt =
         Printf.kprintf (fun s -> logger.Warn(s)) fmt
     member __.WarnException (e:Exception) fmt =
-        Printf.kprintf (fun s -> logger.Warn(s, e)) fmt
+        Printf.kprintf (fun s -> logger.Warn(e, s)) fmt
     member __.Error fmt = 
         Printf.kprintf (fun s -> logger.Error(s)) fmt
     member __.ErrorException (e:Exception) fmt =
-        Printf.kprintf (fun s -> logger.Error(s, e)) fmt
+        Printf.kprintf (fun s -> logger.Error(e, s)) fmt
     member __.Fatal fmt =
         Printf.kprintf (fun s -> logger.Fatal(s)) fmt
     member __.FatalException (e:Exception) fmt =
-        Printf.kprintf (fun s -> logger.Fatal(s, e)) fmt
+        Printf.kprintf (fun s -> logger.Fatal(e, s)) fmt
 
     interface ILogger with 
         member __.Trace fmt = __.Trace fmt

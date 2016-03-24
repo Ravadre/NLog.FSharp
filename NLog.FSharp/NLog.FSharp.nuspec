@@ -2,18 +2,18 @@
 <package >
   <metadata>
     <id>NLog.FSharp</id>
-    <version>3.2.1</version>
+    <version>4.2.3</version>
     <title>NLog FSharp</title>
     <authors>Marcin Deptuła</authors>
     <owners>Marcin Deptuła</owners>
     <licenseUrl>https://raw.githubusercontent.com/Ravadre/NLog.FSharp/master/LICENSE</licenseUrl>
     <projectUrl>https://github.com/Ravadre/NLog.FSharp</projectUrl>
     <requireLicenseAcceptance>false</requireLicenseAcceptance>
-    <description>FSharp helper for NLog</description>
-    <copyright>Copyright Marcin Deptuła 2014-2015</copyright>
-    <tags>NLog FSharp</tags>
+    <description>F# helpers for NLog</description>
+    <copyright>Copyright Marcin Deptuła 2014-2016</copyright>
+    <tags>NLog FSharp F#</tags>
 	<dependencies>
-		<dependency id="NLog" version="3.2.1" />
+		<dependency id="NLog" version="4.2.3" />
 	</dependencies>
   </metadata>
   <files>

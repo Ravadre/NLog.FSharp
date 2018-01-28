@@ -16,8 +16,11 @@ type ILogger =
     abstract Fatal: fmt: Printf.StringFormat<'a, unit> -> 'a
     abstract FatalException: e: Exception -> fmt: Printf.StringFormat<'a, unit> -> 'a
 
-type Logger(logger: NLog.Logger ) =
+type Logger(logger: NLog.Logger) =
     let logger = logger
+
+    new(name: string) =
+        Logger(NLog.LogManager.GetLogger(name))
 
     new() = 
         let callerType = 
@@ -25,7 +28,7 @@ type Logger(logger: NLog.Logger ) =
                 .GetFrames().[0]
                 .GetMethod()
                 .DeclaringType
-        Logger(NLog.LogManager.GetLogger(callerType.Name))
+        Logger(callerType.Name)
     
     member __.Trace fmt =
         Printf.kprintf (fun s -> logger.Trace(s)) fmt

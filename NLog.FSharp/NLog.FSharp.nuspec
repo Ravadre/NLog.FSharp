@@ -2,7 +2,7 @@
 <package >
   <metadata>
     <id>NLog.FSharp</id>
-    <version>4.4.12</version>
+    <version>4.5.3</version>
     <title>NLog FSharp</title>
     <authors>Marcin Deptuła</authors>
     <owners>Marcin Deptuła</owners>
@@ -13,7 +13,7 @@
     <copyright>Copyright Marcin Deptuła 2014-2018</copyright>
     <tags>NLog FSharp F#</tags>
 	<dependencies>
-		<dependency id="NLog" version="4.4.12" />
+		<dependency id="NLog" version="4.5.3" />
 	</dependencies>
   </metadata>
   <files>

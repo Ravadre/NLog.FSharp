@@ -1,9 +1,14 @@
 ﻿
 Microsoft Visual Studio Solution File, Format Version 12.00
-# Visual Studio 2013
-VisualStudioVersion = 12.0.30501.0
+# Visual Studio 15
+VisualStudioVersion = 15.0.28010.2036
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{F2A71F9B-5D33-465A-A702-920D77279786}") = "NLog.FSharp", "NLog.FSharp\NLog.FSharp.fsproj", "{89A07E1D-2739-40DF-B182-1E9A0194E11E}"
+Project("{6EC3EE1D-3C4E-46DD-8F32-0CC8E7565705}") = "NLog.FSharp", "NLog.FSharp\NLog.FSharp.fsproj", "{89A07E1D-2739-40DF-B182-1E9A0194E11E}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Solution Items", "Solution Items", "{F025D99E-9A9F-49C3-90F7-9C526B89C529}"
+	ProjectSection(SolutionItems) = preProject
+		paket.dependencies = paket.dependencies
+	EndProjectSection
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -18,5 +23,8 @@ Global
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {6F26A1B2-C6B3-4B5E-981F-72EDB08598A0}
 	EndGlobalSection
 EndGlobal

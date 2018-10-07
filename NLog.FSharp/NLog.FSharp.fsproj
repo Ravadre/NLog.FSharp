@@ -9,7 +9,7 @@
     <RepositoryType>git</RepositoryType>
     <RepositoryUrl>https://github.com/Ravadre/NLog.FSharp.git</RepositoryUrl>
     <Description>F# for NLog helper</Description>
-    <Version>4.5.3</Version>
+    <Version>4.5.10</Version>
     <PackageRequireLicenseAcceptance>true</PackageRequireLicenseAcceptance>
     <GeneratePackageOnBuild>true</GeneratePackageOnBuild>
   </PropertyGroup>

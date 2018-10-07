@@ -1,6 +1,6 @@
 ﻿namespace NLog.FSharp
 
-open System;
+open System
 
 type ILogger =
     abstract Trace: fmt: Printf.StringFormat<'a, unit> -> 'a
@@ -22,6 +22,8 @@ type Logger(logger: NLog.Logger) =
     new(name: string) =
         Logger(NLog.LogManager.GetLogger(name))
 
+#if NETSTANDARD1_6
+#else
     new() = 
         let callerType = 
             System.Diagnostics.StackTrace(1, false)
@@ -29,6 +31,7 @@ type Logger(logger: NLog.Logger) =
                 .GetMethod()
                 .DeclaringType
         Logger(callerType.Name)
+#endif
     
     member __.Trace fmt =
         Printf.kprintf (fun s -> logger.Trace(s)) fmt

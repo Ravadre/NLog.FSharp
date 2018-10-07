@@ -48,7 +48,7 @@ For information on NLog configuration files, visit the [NLog wiki](https://githu
 
 ### Compile NLog.FSharp
 
-Using the `dotnet` SDK (e.g. version 2.1.402):
+Using the [`.NET Core`](https://www.microsoft.com/net/download) SDK (e.g. version 2.1.402):
 ```
 .\.paket\paket.bootstrapper.exe
 .\.paket\paket.exe restore

@@ -160,5 +160,4 @@ $RECYCLE.BIN/
 
 # Current Paket Version
 .paket/paket.exe
-.paket/Paket.Restore.targets
 paket-files/

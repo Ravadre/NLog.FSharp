@@ -43,3 +43,22 @@ More examples of formatted text in F# are available [here](https://fsharpforfuna
 ## Configuration
 
 For information on NLog configuration files, visit the [NLog wiki](https://github.com/nlog/NLog/wiki/Configuration-file).  Use this resource to determine what to log and where to log it when you need to capture output at runtime.
+
+## Open Source
+
+### Compile NLog.FSharp
+
+Using the [`.NET Core`](https://www.microsoft.com/net/download) SDK (e.g. version 2.1.402):
+```
+.\.paket\paket.bootstrapper.exe
+.\.paket\paket.exe restore
+dotnet restore
+dotnet build -c Release
+```
+
+### Publish NLog.FSharp to NuGet
+
+Using the publishing `$key` provided by nuget:
+```
+dotnet nuget push **/*.nupkg -k $key -s https://api.nuget.org/v3/index.json
+```

@@ -5,6 +5,7 @@
 *.suo
 *.user
 *.sln.docstates
+.vs/
 
 NLog.FSharp/*.nupkg
 
@@ -156,3 +157,7 @@ $RECYCLE.BIN/
 
 # Mac desktop service store files
 .DS_Store
+
+# Current Paket Version
+.paket/paket.exe
+paket-files/
